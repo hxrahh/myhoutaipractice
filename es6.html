@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* 《一》   es6 新增的连个定义变量的方式，用来替换和增强var的
+            let: 用来替代var，没有预解析，拥有块级作用域
+            const： 与let差不多，唯一区别就是赋值后不能改变用来定义常量的
+        */
+        // let a = 10;
+        // const b = 20;
+        // console.log(a)  // 10
+        // console.log(b)  // 20
+        // b = 10; // 报错
+
+        /*《二》   es6的赋值结构，按照一定的模式解数组或者对象中的值，然后赋值给其他变量 */
+        // var obj = {inObj: { a: 10, b: 20, c: 30}};
+        // var { inObj:{ b,c } } = obj;
+        // console.log(b,c) // 报错
+
+        // // 对象按照key名解构
+        // let obj = {inObj: { a: 10, b: 20, c: 30}};
+        // let { inObj:{ b,c } } = obj;
+        // console.log(b,c)  // 20,30
+
+        // // 数组按照下标位置解构
+        // let arr = [ 100, 200, 300 ];
+        // let [ , bb ] = arr;   // 提取数组中的第二个值
+        // console.log(bb);  // 200
+    </script>
+</body>
+</html>
